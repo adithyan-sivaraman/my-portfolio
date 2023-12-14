@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Lato&family=Montserrat&family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+
+@layer components {
+
+  .top-bar {
+    @apply px-6 flex gap-5 font-lato items-center fixed top-0 left-0 w-screen z-10
+  }
+
+  .contact {
+    @apply flex w-screen p-5
+  }
+
+  .skill-item {
+    @apply text-sm lg:text-base border rounded-lg bg-indigo-600 px-3 py-2 text-white
+  }
+}
+
+
+@tailwind utilities;
+
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+}
+
+#root {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  max-width: none !important;
+  text-align: left;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.box-shadow {
+  box-shadow: #00000030 0 10px 20px, #0000003b 0 6px 6px;
+}
+
+.top-bar {
+  box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
+  background-color: white;
+  height: 60px !important;
+}
+
+.contact {
+  border: 7px solid white;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+#home {
+  background-color: #FFFDD0 !important;
+}
+
+#about_center {
+  background-color: #353935;
+  color: beige !important;
+  max-height: 150px !important;
+}
+
+#about {
+  background-color: #E5E4E2 !important;
+}
+
+#experience {
+  background-color: white;
+}
+
+#contact {
+  background-color: #FFBF00 !important;
+}
+
+section {
+  padding: 5px;
+}
+
+.about h1 {
+  font-size: 44px !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+#about_skills {
+  max-width: 1200px !important;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 20px;
+  padding: 10px 15px;
+
+}
+
+.chakra-card:hover {
+  transform: translate3d(0px, -16px, 0px);
+  box-shadow: -5px 5px 0 0 rgba(65, 117, 5, 1), -10px 10px 0 0 rgba(65, 117, 5, 0.6), -15px 15px 0 0 rgba(65, 117, 5, 0.4), -20px 20px 0 0 rgba(65, 117, 5, 0.2), -25px 25px 0 0 rgba(65, 117, 5, 0.1);
+}
